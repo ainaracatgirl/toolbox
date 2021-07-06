@@ -1,0 +1,17 @@
+{
+  "name": "toolbox",
+  "version": "1.0.0",
+  "description": "Toolbox JS + Toolbox CSS (build packager)",
+  "main": "builder.js",
+  "scripts": {
+    "build": "node .",
+    "serve": "npx serve",
+    "dev": "npx nodemon --exec \"npm run build\" -e js,css,html --ignore dist/"
+  },
+  "author": "JanCraft",
+  "license": "MIT",
+  "dependencies": {
+    "csso": "^4.2.0",
+    "uglify-js": "^3.13.10"
+  }
+}
