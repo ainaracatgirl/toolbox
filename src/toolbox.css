@@ -126,6 +126,8 @@ html, body {
     padding: calc(var(--tbx-size-half) * 1rem);
     background: var(--tbx-depth-background);
     color: var(--tbx-depth-foreground);
+
+    margin-bottom: calc(var(--tbx-size-half) * 1rem);
     
     border-radius: calc(var(--tbx-size-halfquarter) * 1rem);
     border: var(--tbx-border-width) solid var(--tbx-border-color);
@@ -229,4 +231,8 @@ html, body {
 @keyframes tbxanimatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+}
+
+.tbx-full-width {
+    width: 100%;
 }
