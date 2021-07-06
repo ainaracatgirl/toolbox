@@ -93,11 +93,29 @@
         </section>
         <section id="modals">
             <h2>Modals</h2>
+
+            <button onclick="tbx('#test-modal').show()" class="tbx-btn">Show test modal</button>
         </section>
         <section id="login">
             <h2>Login</h2>
         </section>
     </main>
+
+    <div id="test-modal" class="tbx-modal">
+        <div class="tbx-modal-content">
+            <div class="tbx-modal-header">
+                <span onclick="tbx('#test-modal').hide()" class="tbx-close-btn">&times;</span>
+                <h2>Test Modal</h2>
+            </div>
+            <div class="tbx-modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="tbx-modal-footer">
+                <p>Bottom text</p>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="tbx-footer">
         Copyright &copy; 2021 JanCraft

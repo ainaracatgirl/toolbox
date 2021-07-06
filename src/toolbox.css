@@ -168,3 +168,65 @@ html, body {
     padding: calc(var(--tbx-size-quarter) * 1rem);
     color: var(--tbx-depth-foreground);
 }
+
+.tbx-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.4);
+}
+
+.tbx-modal-content {
+    background: var(--tbx-background);
+    margin: 15% auto;
+    padding: calc(var(--tbx-size-quarter) * 1rem);
+    border: var(--tbx-border-width) solid var(--tbx-border-color);
+    width: 80%;
+}
+
+.tbx-close-btn {
+    color: var(--tbx-button-background);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tbx-close-btn:hover,
+.tbx-close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tbx-modal-header {
+    padding: calc(var(--tbx-size-halfquarter) * 1rem) calc(var(--tbx-size-quarter) * 1rem);
+    background: var(--tbx-depth-background);
+    color: var(--tbx-depth-foreground);
+    border-bottom: var(--tbx-border-width) solid var(--tbx-border-color);
+}
+
+.tbx-modal-body {padding: calc(var(--tbx-size-halfquarter) * 1rem) calc(var(--tbx-size-quarter) * 1rem);}
+
+.tbx-modal-footer {
+    padding: calc(var(--tbx-size-halfquarter) * 1rem) calc(var(--tbx-size-quarter) * 1rem);
+    background: var(--tbx-depth-background);
+    color: var(--tbx-depth-foreground);
+    border-top: var(--tbx-border-width) solid var(--tbx-border-color);
+}
+
+.tbx-modal-content {
+    padding: 0;
+    animation-name: tbxanimatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes tbxanimatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
