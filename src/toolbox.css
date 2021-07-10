@@ -23,6 +23,18 @@
     --tbx-size-halfquarter: .25;
 }
 
+.tbx-dark {
+    --tbx-background: #111;
+    --tbx-foreground: #eee;
+
+    --tbx-depth-background: #222;
+    --tbx-depth-foreground: #ddd;
+    
+    --tbx-button-background: #eee;
+    --tbx-button-active-background: #ddd;
+    --tbx-button-foreground: #222;
+}
+
 html, body {
     width: 100%;
     height: max-content;
@@ -35,6 +47,11 @@ html, body {
     font-family: var(--tbx-font);
 
     scroll-behavior: smooth;
+    transition-duration: 250ms;
+}
+
+a {
+    color: inherit;
 }
 
 .tbx-nav {
@@ -55,7 +72,7 @@ html, body {
 }
 
 .tbx-nav-fixed-offset {
-    margin-top: calc(var(--tbx-size-fullhalf) * 2rem);
+    padding-top: calc(var(--tbx-size-fullhalf) * 2rem);
 }
 
 .tbx-nav-brand {
@@ -100,6 +117,7 @@ html, body {
     padding: calc(var(--tbx-size-quarter) * 1rem);
     cursor: pointer;
     transition-duration: 100ms;
+    margin: calc(var(--tbx-size-halfquarter) * 1rem)
 }
 .tbx-btn:hover, .tbx-btn:active {
     background: var(--tbx-button-active-background);
@@ -118,7 +136,6 @@ html, body {
     color: var(--tbx-depth-foreground);
 
     border-top: var(--tbx-border-width) solid var(--tbx-border-color);
-    border-bottom: var(--tbx-border-width) solid var(--tbx-border-color);
 }
 
 .tbx-card {
@@ -201,7 +218,7 @@ html, body {
 
 .tbx-close-btn:hover,
 .tbx-close-btn:focus {
-  color: black;
+  color: var(--tbx-button-active-background-background);
   text-decoration: none;
   cursor: pointer;
 }
