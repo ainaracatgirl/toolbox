@@ -18,3 +18,7 @@ function tbx(sel) {
     }
     return s;
 }
+
+tbx.navcollapse = () => {
+    tbx('.tbx-nav').toggleClass('tbx-collapse-show');
+};

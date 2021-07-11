@@ -31,13 +31,16 @@
             <button class="tbx-btn" onclick="tbx('body').toggleClass('tbx-dark')">Dark/Light mode</button>
             <a class="tbx-btn" href="#login">Login</a>
         </div>
+        <div class="tbx-nav-collapser tbx-nav-right">
+            <button class="tbx-btn" onclick="tbx.navcollapse()">☰</button>
+        </div>
     </nav>
 
     <main class="tbx-main" role="main">
         <section id="cards">
             <h2>Cards</h2>
 
-            <div class="tbx-card tbx-card-w50">
+            <div class="tbx-card">
                 <img src="logo.png" width="64" height="64" alt="Toolbox Logo">
                 <h3>This is a card</h3>
                 <p>
@@ -101,7 +104,7 @@
         <section id="login">
             <h2>Login</h2>
 
-            <div class="tbx-card tbx-card-w25">
+            <div class="tbx-card" style="max-width: 15rem;">
                 <img src="logo.png" alt="Toolbox Logo" class="tbx-full-width">
                 <form class="tbx-form">
                     <label for="email">Email address</label>
